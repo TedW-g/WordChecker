@@ -13,11 +13,20 @@ public class WordChecker
             String before = wordList.get(i - 1);
             if(after.indexOf(before) < 0) return false;
         }
+        return true;
     }
 
     public ArrayList<String> createList(String target)
     {
-        return new ArrayList<>();
+        ArrayList<String> list = new ArrayList<String>();
+        for (String s : wordList)
+        {
+            if(s.indexOf(target) == 0)
+            {
+                list.add(s.substring(target.length()));
+            }
+        }
+        return list;
     }
 
     public WordChecker(ArrayList<String> list)

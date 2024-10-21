@@ -12,5 +12,12 @@ public class Main
         words.add("abandon");
         System.out.print(words);
         WordChecker x = new WordChecker(words);
+
+        //test1
+
+        ArrayList<String> one = new ArrayList<String>();
+        WordChecker test1 = new WordChecker(one);
+        
+
     }
 }

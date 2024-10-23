@@ -5,18 +5,25 @@ public class Main
     public static void main(String[] args)
     {
         ArrayList<String> words = new ArrayList<String>();
-        WordChecker w = new WordChecker(words);
         words.add("an");
         words.add("band");
         words.add("band");
         words.add("abandon");
         System.out.print(words);
         WordChecker x = new WordChecker(words);
+        System.out.println(" Is it a chain: " + x.isWordChain());
+        System.out.println(x.createList("a"));
 
         //test1
 
         ArrayList<String> one = new ArrayList<String>();
-        WordChecker test1 = new WordChecker(one);
+        one.add("catch");
+        one.add("bobcat");
+        one.add("catchacat");
+        one.add("cat");
+        one.add("at");
+
+        
         
 
     }

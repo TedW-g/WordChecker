@@ -21,11 +21,11 @@ public class WordChecker
     public ArrayList<String> createList(String target)
     {
         ArrayList<String> list = new ArrayList<>();
-        for (String s : wordList)
+        for (String b : wordList)
         {
-            if(s.indexOf(target) == 0)
+            if(b.indexOf(target) == 0)
             {
-                list.add(s.substring(target.length()));
+                list.add(b.substring(target.length()));
             }
         }
         return list;
@@ -33,6 +33,6 @@ public class WordChecker
 
     public WordChecker(ArrayList<String> list)
     {
-        wordList = new ArrayList<String>();
+        wordList = list;
     }
 }

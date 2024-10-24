@@ -22,6 +22,21 @@ public class Main
         one.add("catchacat");
         one.add("cat");
         one.add("at");
+        WordChecker w = new WordChecker(one);
+        System.out.println(w.isWordChain());
+        System.out.println(w.createList("cat"));
+
+        //test2
+
+        WordChecker s = new WordChecker(one);
+        System.out.println(s.isWordChain());
+        System.out.println(s.createList("catch"));
+
+        //test3
+
+        WordChecker d = new WordChecker(one);
+        System.out.println(d.isWordChain());
+        System.out.println(d.createList("dog"));
 
         
         
